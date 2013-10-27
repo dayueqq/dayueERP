@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="title" content="员工管理系统">
+<meta name="apple-touch-fullscreen" content="YES">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>东莞市悦车广告有限公司员工管理系统</title>
+<link rel="stylesheet" href="../res/css/innerPage.css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script language="javascript">   
+    var divCount=0;
+    
+    function AddTextarea(){   
+      var otr1=document.getElementById("section-items"+divCount);
+	var label1 = document.createElement("label");	
+	label1.innerHTML= '店名： <input type="text" class="items" name="name" value="4s店名" id="name">';
+	otr1.appendChild(label1);
+        var newline1=document.createElement("br");
+	otr1.appendChild(newline1);
+       
+       var otr2=document.getElementById("section-items"+divCount);
+	var label2 = document.createElement("label");	
+	label2.innerHTML= '金额： <input type="text" class="items" name="money" value="交易金额" id="money">';
+	otr2.appendChild(label2);
+       var newline2=document.createElement("br");
+	otr2.appendChild(newline2);
+       
+        var otr3=document.getElementById("section-items"+divCount);
+	var label3 = document.createElement("label");	
+	label3.innerHTML= '详情： <textarea id="detail"  name="detail" value="订单详情" row="10" cols="34"></textarea>';
+	otr3.appendChild(label3);
+       var newline3=document.createElement("br");
+	otr3.appendChild(newline3);
+    }  
+    function AddDiv(){
+        var TemO=document.getElementById("form01");
+        var newDiv = document.createElement("div");
+        divCount = divCount + 1;      
+        newDiv.id="Div" + (divCount);
+        TemO.appendChild(newDiv);
+        document.getElementById("Div"+ divCount).className="section";
+        
+	var Tem1=document.getElementById("Div" + divCount);
+        var newDiv1 = document.createElement("div");
+        newDiv1.id="section-items"+divCount;
+        Tem1.appendChild(newDiv1);
+         
+    }
+    function delDiv(){
+         var divArea=document.getElementById("Div" + divCount);
+         divArea.parentNode.removeChild(divArea);
+	 divCount--;
+         
+    }
+
+    function AddForm(){
+         AddDiv();
+	 AddTextarea();
+    }  
+    </script>
+</head>
+
+<body class="bg01">
+      <div id="content">
+      <div class="header">
+        <p>东莞市悦车广告有限公司</p>
+        <p>信息录入系统</p>
+      </div>
+      <div class="section">
+	  <p>欢迎您，<span id="user-name">陈烁斌</span>&nbsp;&nbsp;&nbsp;&nbsp;!</p>
+      </div>
+
+      <form method="post" action="XXXX" id="form01">
+        <div class="section">
+        	<div id="section_items">
+                <label for="name">店名：</label>
+                <input id="name" class="items" name="name" value="4S店名" type="text"><br>
+                <label for="password">金额：</label>
+                <input id="money" class="items" name="money" value="交易金额" type="text"><br>
+		<label for="detail">详情：</label>
+                <textarea id="detail"  name="detail" value="订单详情"></textarea><br>
+                </div>
+        </div>
+      </form>
+    
+
+         <div id="btn_box">
+	  <input id="btn"  type="button" value="增加条项" onClick="AddForm()" />
+		<br>
+	  <input id="btn"  type="button" value="删除条项" onClick="delDiv()" />
+                <br>
+          <input id="btn" type="button" value="确认提交"  onClick="XXXX">
+	</div>   
+    <!--	
+    <script type="text/javascript">
+		document.getElementById("btn").onclick = function() {
+			var name = document.getElementById("name").value;
+			var password = document.getElementById("password").value;
+			var items = document.getElementById("items_select").value;
+			if(name == "") {
+				alert("姓名不能为空！");
+				return false;
+			}
+			if(password == "") {
+				alert("手机不能为空！");
+				return false;
+			}
+			if(items == "") {
+				alert("车系不能为空！");
+				return false;
+			}
+		}
+	</script>
+-->
+</body>
+</html>
