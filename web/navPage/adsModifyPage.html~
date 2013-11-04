@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="title" content="员工管理系统">
+<meta name="apple-touch-fullscreen" content="YES">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>东莞市悦车广告有限公司员工管理系统</title>
+<link rel="stylesheet" href="adsModifyPage.css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body class="bg01">
+      <div id="content">
+      <div class="header">
+        <p>悦车广告 &nbsp;&nbsp;&nbsp;&nbsp;移动办公</p>
+        <p>信息录入系统</p>
+      </div>
+      <div class="section">
+	  <p>欢迎您，<span id="user-name">陈烁斌</span>&nbsp;&nbsp;&nbsp;&nbsp;!</p>
+      </div>
+
+      <form method="post" action="XXXX" id="form01">
+        <div class="section">
+        	<div id="section_items">
+                <label for="name">广告位：</label>
+                <select id="name" class="items" name="name">
+			<option value="default">-请选择-</option>
+			<option value="ads0">全屏</option>
+			<option value="ads4">banner</option>
+			<option value="ads5">单联广告</option>
+			<option value="ads10">右侧button</option>
+			<option value="ads11">中间小通栏</option>
+			<option value="ads9">顶部通栏1</option>
+			<option value="ads6">顶部通栏2</option>
+			<option value="ads7">顶部通栏3</option>
+			<option value="ads8">顶部通栏4</option>
+			<option value="ads1">首页通栏1</option>
+			<option value="ads2">首页通栏2</option>
+			<option value="ads3">首页通栏3</option>
+			<option value="ads12">顶部左横幅1</option>
+			<option value="ads13">顶部左横幅2</option>
+			<option value="ads14">顶部右横幅1</option>
+			<option value="ads15">顶部右横幅2</option>
+		</select>		
+		<br>
+		<label for="responsor">负责人：</label>
+		 <select id="responsor" class="items" name="responsor">
+			<option value="default">-请选择-</option>
+			<option value="user0">白国添</option>
+			<option value="user1">张文忠</option>
+			<option value="user2">方颖</option>
+			<option value="user3">李利利</option>
+		</select>				
+		<br>
+		<label for="adsTitle">专题：</label>
+                <input id="adsTitle" class="items" name="adsTitle" placeholder="专题名" type="text"><br>
+		<label for="链接">链接：</label>
+                <input id="linkAds" class="items" name="linkAds" placeholder="链接" type="text"><br>
+                <label for="startTime">申请日期：</label>
+                <input id="startTime" class="items" name="startTime" placeholder="申请日期" type="text"><br>
+		<label for="startTime">截止日期：</label>
+                <input id="deadTime" class="items" name="deadTime" placeholder="截止日期" type="text"><br>
+
+                </div>
+        </div>
+      </form>
+    
+
+         <div id="btn_box">
+          <input id="btn" type="button" value="确认修改"  onClick="XXXX">
+	</div>   
+</body>
+</html>
